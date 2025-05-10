@@ -1,3 +1,5 @@
+#BY CONNECTED09#
+
 import argparse
 import socket
 import hashlib
@@ -246,6 +248,7 @@ class Server: # Assuming Server class is correct from previous iteration or is n
                 server_thread.join(timeout=2.0) 
 
             logger.info("Server has stopped.")
+#BY CONNECTED09#
 
 # --- Client ---
 class Client:
@@ -542,6 +545,7 @@ class Client:
             if self.sock: self.sock.close()
             if not self._stop_event.is_set():
                 logger.info(f"[UDP] Client finished. Processed {attempted_packets} packets.")
+#BY CONNECTED09#
 
     def run(self):
         """Runs the client test and saves results."""
@@ -678,4 +682,6 @@ Client Mode (Time-based):
         client.run()
 
 if __name__ == "__main__":
+    #BY CONNECTED09#
+
     main()
