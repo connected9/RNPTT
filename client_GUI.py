@@ -1,3 +1,4 @@
+#BY CONNECTED09#
 import tkinter as tk
 from tkinter import messagebox
 import threading
@@ -215,6 +216,7 @@ class NetworkPerfTestGUI(tk.Tk):
         self.start_button.config(state=tk.NORMAL)
         self.stop_button.config(state=tk.DISABLED)
         self.save_results()
+#BY CONNECTED09#
 
     def run_test(self, server_ip: str, port: int, packet_size: int, protocol: str, count: Optional[int], duration_sec: Optional[int], verbose: bool):
         """Runs the network test in a separate thread."""
@@ -417,3 +419,4 @@ class NetworkPerfTestGUI(tk.Tk):
 if __name__ == "__main__":
     app = NetworkPerfTestGUI()
     app.mainloop()
+    #BY CONNECTED09#
