@@ -1,0 +1,8 @@
+SERVER : 
+
+python network_tester.py  --port 7443 --udp
+
+
+CLINET : 
+
+python network_tester.py  --server 127.0.0.1 --port 7443 --tcp --packet-size 50 --count 100
