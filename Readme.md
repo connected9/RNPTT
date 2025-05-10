@@ -98,6 +98,13 @@ python network_perf_test.py --server <SERVER_IP> --port <PORT> --packet-size <SI
 python network_perf_test.py --server 127.0.0.1 --port 8773 --packet-size 1024 --count 50 --tcp --verbose
 ```
 
+Server Mode:
+  python %(prog)s --port 8773 --udp
+
+Client Mode (Gaming Simulation):
+  python %(prog)s --server 127.0.0.1 --port 8773 --gaming --udp
+  python %(prog)s --server 192.168.1.100 --port 8773 --packet-size 128 --rate 50 --udp
+
 ### Graphical User Interface (GUI)
 
 To launch the GUI version of the tool, run:
